@@ -2,9 +2,11 @@ package pl.jug.bydgoszcz.swarm.apples;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import java.util.List;
 
 /**
@@ -13,7 +15,9 @@ import java.util.List;
  * Date: 10/18/17
  */
 @Path("/apples")
-public class AppleEndpoint {
+@Produces("application/json")
+@Consumes("application/json")
+public class AppleResource {
 
     @Inject
     private AppleDao dao;
