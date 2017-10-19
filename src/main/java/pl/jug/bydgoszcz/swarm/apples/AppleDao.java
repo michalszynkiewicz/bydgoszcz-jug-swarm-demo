@@ -23,7 +23,7 @@ public class AppleDao {
 
     public List<Apple> getAll() {
         return entityManager
-                .createQuery("FROM Apple", Apple.class)
+                .createQuery("SELECT a FROM Apple a", Apple.class)
                 .getResultList();
     }
 }
