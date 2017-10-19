@@ -19,6 +19,8 @@ public class Apple {
 
     private String description;
 
+    private Integer calories;
+
 
 
 
@@ -40,5 +42,13 @@ public class Apple {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getCalories() {
+        return calories;
+    }
+
+    public void setCalories(Integer calories) {
+        this.calories = calories;
     }
 }
