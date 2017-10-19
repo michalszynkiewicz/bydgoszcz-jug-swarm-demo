@@ -4,5 +4,8 @@ swarm:
   zipkin:
     url: http://localhost:9411/api/v1/spans
     name: apple-service
+  topology:
+    consul:
+      url: http://localhost:8500
 nutrition:
   url: http://localhost:8280/nutrition
