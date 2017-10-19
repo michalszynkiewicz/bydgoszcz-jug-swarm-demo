@@ -1,0 +1,3 @@
+swarm:
+  keycloak:
+    url: http://localhost:8180/auth

@@ -1,0 +1,20 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Apple endpoint</web-resource-name>
+      <url-pattern>/apples</url-pattern>
+      <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>apple-admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <login-config>
+    <auth-method>KEYCLOAK</auth-method>
+  </login-config>
+
+  <security-role>
+    <role-name>apple-admin</role-name>
+  </security-role>
+</web-app>

@@ -1,0 +1,7 @@
+{
+  "realm": "bjug",
+  "bearer-only": true,
+  "auth-server-url": "${swarm.keycloak.url}",
+  "ssl-required": "external",
+  "resource": "service"
+}
