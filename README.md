@@ -37,7 +37,7 @@ To run it on minishift:
     ```
  - install Keycloak:
     ```
-    git clone https://github.com/michalszynkiewicz/zipkin-openshift
+    git clone https://github.com/michalszynkiewicz/keycloak-openshift
     cd zipkin-openshift
     ./install.sh
     ```
